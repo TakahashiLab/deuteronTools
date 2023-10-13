@@ -99,7 +99,7 @@ end
 sampl=31250;%Hz
 %sampl=sampl/2;% sampling rate error?
 oX=X;
-X=filterAmp(X,0,sampl)';
+X=filterAmp(X,0,sampl);
 stdV=-ones(4,1)*50;%250;80
 %stdV=std(X,[],2)*5;
 sX=int16(X);
